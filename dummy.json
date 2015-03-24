@@ -4,10 +4,10 @@
     {"id":"","label":"Slices","pattern":"","type":"number"}
   ],
   "rows": [
-    {"c":[{"v":"Mushrooms","f":null},{"v":3,"f":null}]},
-    {"c":[{"v":"Onions","f":null},{"v":1,"f":null}]},
-    {"c":[{"v":"Olives","f":null},{"v":1,"f":null}]},
-    {"c":[{"v":"Zucchini","f":null},{"v":1,"f":null}]},
-    {"c":[{"v":"Pepperoni","f":null},{"v":2,"f":null}]}
+    {"c":[{"v":"유형준","f":null},{"v":2,"f":null}]},
+    {"c":[{"v":"박경민","f":null},{"v":2,"f":null}]},
+    {"c":[{"v":"전민지","f":null},{"v":2,"f":null}]},
+    {"c":[{"v":"큐핏","f":null},{"v":3,"f":null}]},
+    {"c":[{"v":"테스트","f":null},{"v":1,"f":null}]}
   ]
 }
