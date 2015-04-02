@@ -11,6 +11,14 @@ var charts = require('./routes/charts');
 
 var app = express();
 
+/* MYSQL */
+
+var mysql = require('mysql');
+var dbConfig = require('./config/database');
+
+// create connection pool
+global.dbConnection = mysql.createPool(dbConfig);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

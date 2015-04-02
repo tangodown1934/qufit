@@ -6,7 +6,7 @@ google.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var jsonData = $.ajax({
-    url: "/charts/data",
+    url: "/users/gender",
     dataType:"json",
     async: false
   }).responseText;
