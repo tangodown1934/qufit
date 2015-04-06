@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var charts = require('./routes/charts');
+var trainer = require('./routes/trainer');
 
 var app = express();
 
@@ -17,7 +18,7 @@ var mysql = require('mysql');
 var dbConfig = require('./config/database');
 
 // create connection pool
-global.dbConnection = mysql.createPool(dbConfig);
+global.dbPool = mysql.createPool(dbConfig);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,9 +32,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
 app.use('/users', users);
 app.use('/charts', charts);
+app.use('/trainer', trainer);
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
